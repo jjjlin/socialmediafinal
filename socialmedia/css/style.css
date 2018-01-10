@@ -35,12 +35,12 @@
   z-index: 20;
   box-shadow: 0 0 20px -5px #22181e;
 }
-#button img {
-  position: absolute;
-  left: -73%;
-  top: 0;
-  width: 180%;
-}
+#button img{
+    position: absolute;
+    margin-left:-400px;
+    top:0;
+    width:400%;
+  }
 #button svg {
   width: 50%;
   height: 50%;
