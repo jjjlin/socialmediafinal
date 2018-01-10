@@ -15,6 +15,7 @@ $border-color-hover: $color-black;
     border : 0;
     background : transparent;
     font : inherit;
+    font-size:60px;
     line-height : normal;
     cursor : pointer;
     -moz-user-select : text;
@@ -45,7 +46,7 @@ body {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 16px 36px 22px;
+    padding: 48px 108px 66px;
     background-color: $btn-background;
     color: $btn-color;
     border: 2px solid $border-color;
