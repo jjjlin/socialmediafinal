@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YJ's WONDERLAND - Contact Me</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!--map-->
+    <style>
+    #map {
+        width: 100%;
+        height: 300px;
+        background-color: grey;
+    }
+    </style>
+    <script>
+    function initMap() {
+        var uluru = { lat: 25.176059, lng: 121.451712 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH5AQantbVxER44t0ScrwnHvc1w-3pi7Q&callback=initMap">
+    </script>
+</head>
+
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">YJ Lin</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br>
+                <br>
+                <h1 class="header center" style="text-shadow:black 0.1em 0.1em 0.2em; padding-top: 60px">Contact Me</h1>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="parallax"><img src="img/contact1.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 center">
+                    <div class="card">
+                        <div class="card-content">
+                            <p>If you want to contact with me,
+                                <br/> you have these options...</p>
+                        </div>
+                        <div class="card-tabs">
+                            <ul class="tabs tabs-fixed-width">
+                                <li class="tab"><a href="#test4">Mail</a></li>
+                                <li class="tab"><a class="active" href="#test5">Facebook</a></li>
+                                <li class="tab"><a href="#test6">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-content grey lighten-4">
+                            <div id="test4">605410611@gms.tku.edu.tw</div>
+                            <div id="test5"><a href="https://www.facebook.com/profile.php?id=100000185970502"><img src="img/fb.png" style="height: 50px"></div>
+                            <div id="test6"><div id="test5"><a href="https://imggram.com/profile/xollxollxolloxlloxllox/4125625848"><img src="img/ig.png" style="height: 80px"></div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 center">
+                        <h3><i class="mdi-content-send brown-text"></i></h3>
+                        <h4>LOCATION OF LAB</h4>
+                        <div class="center" id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer teal">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 s12">
+                        <h5 class="white-text">Power by</h5>
+                        <img src="img/tku22.png" style="height: 50px">
+                    </div>
+                    <div class="col l8 s12">
+                        <h5 class="white-text">Social Medias</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Facebook</a></li>
+                            <li><a class="white-text" href="#!">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Yu-Jing Lin</a>
+                </div>
+            </div>
+        </footer>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+</body>
+
+</html>

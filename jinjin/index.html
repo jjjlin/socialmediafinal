@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YJ's WONDERLAND - INDEX</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!--facebook-->
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.11&appId=138548530156448';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+</head>
+
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">YJ Lin</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div id="top" class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/index1.jpg">
+                <!-- random image -->
+                <div class="caption center-align">
+                    <h3 class="header center" style="margin-top: 50% ; text-shadow: black 0.1em 0.1em 0.2em">Hi there</h3>
+                    <h5 style="text-shadow: black 0.1em 0.1em 0.2em">;)</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/index3.jpg">
+                <!-- random image -->
+                <div class="caption left-align white-text">
+                    <h3 style="text-shadow: black 0.1em 0.1em 0.2em">My name is...</h3>
+                    <h5 style="text-shadow: black 0.1em 0.1em 0.2em">Yu-Jing Lin</h5>
+                    <a href="product.html"></a>
+                </div>
+            </li>
+            <li>
+                <img src="img/index4.jpg">
+                <!-- random image -->
+                <div class="caption right-align">
+                    <h3 style="text-shadow: black 0.1em 0.1em 0.2em">This app can...</h3>
+                    <h5 style="text-shadow: black 0.1em 0.1em 0.2em" class="light grey-text text-lighten-3">Let you know who I am<br></h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/index2.jpg">
+                <!-- random image -->
+                <div class="caption center-align">
+                    <h3 style="text-shadow: black 0.1em 0.1em 0.2em">Enjoy!</h3>
+                    <h5 style="text-shadow: black 0.1em 0.1em 0.2em"">;)</h5>
+                </div>
+            </li>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                    <div class="button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share this app on your facebook ;)</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5 class="white-text">Power by</h5>
+                    <img src="img/tku22.png" style="height: 50px">
+                </div>
+                <div class="col l8 s12">
+                    <h5 class="white-text">Social Medias</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Facebook</a></li>
+                        <li><a class="white-text" href="#!">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Yu-Jing Lin</a>
+            </div>
+        </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <!--Initialization -->
+    <script>
+    $(document).ready(function() {
+        $('.scrollspy').scrollSpy();
+        $(".button-collapse ").sideNav();
+
+        $(".dropdown-button ").dropdown();
+
+        $('.carousel.carousel-slider').carousel({
+            full_width: true
+        });
+        $('.carousel').carousel({});
+        $('.slider').slider();
+        $(".hover ").mouseleave(
+            function() {
+                $(this).removeClass("hover ");
+            }
+        );
+
+        $(".active ").mouseleave(
+            function() {
+                $(this).removeClass("active ");
+            }
+        );
+        $('.parallax').parallax();
+
+        $('#featured').orbit();
+    });
+    </script>
+</body>
+
+</html>
