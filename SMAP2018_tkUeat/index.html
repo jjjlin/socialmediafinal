@@ -1,245 +1,43 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>EZoApp</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob: filesystem:">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
-  <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>
-    $(document).on("mobileinit", function () {
-      $.mobile.autoInitializePage = false;
-      $.mobile.hashListeningEnabled = false;
-    });
-
-    function mobileInitPage() {
-      $.mobile.hashListeningEnabled = true;
-      $.mobile.initializePage();
-    }
-  </script>
-  <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <!-- Uncomment the following to include cordova in your app project -->
-  <!-- <script src="//ezoui.com/platforms/android_or_ios/cordova.js"></script> -->
-  <!-- GK Loader use RequireJS to load module -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.16/require.min.js"></script>
-  <!--Plug in GK-->
-  <script src="//ezoui.com/components/jquery.gk/jquery.gk.min.js"></script>
-  <!-- Load GK components -->
-  <script components="//ezoui.com/components/gk-ext/gk-text.html,//ezoui.com/components/gk-jquerymobile/link.html" callback="mobileInitPage" src="//ezoui.com/components/gk-loader/gk-loader.min.js"></script>
-</head>
-
-<body>
-  <!-- Page: index  -->
-  <meta charset="utf-8">
-  <title>EZoApp</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob: filesystem:">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
-  <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>
-    $(document).on("mobileinit", function () {
-      $.mobile.autoInitializePage = false;
-      $.mobile.hashListeningEnabled = false;
-    });
-
-    function mobileInitPage() {
-      $.mobile.hashListeningEnabled = true;
-      $.mobile.initializePage();
-    }
-  </script>
-  <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <!-- Uncomment the following to include cordova in your app project -->
-  <!-- <script src="//ezoui.com/platforms/android_or_ios/cordova.js"></script> -->
-  <!-- GK Loader use RequireJS to load module -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.16/require.min.js"></script>
-  <!--Plug in GK-->
-  <script src="//ezoui.com/components/jquery.gk/jquery.gk.min.js"></script>
-  <!-- Load GK components -->
-  <script components="//ezoui.com/components/gk-ext/gk-text.html" callback="mobileInitPage" src="//ezoui.com/components/gk-loader/gk-loader.min.js"></script>
-  <!-- Page: index  -->
-  <div id="index" data-role="page">
-    <div data-role="header" data-position="fixed" data-theme="b">
-      <h3>tkUeat</h3> 
-    </div>
-    <div role="main" class="ui-content">
-      <a class="ui-btn">Random Choose</a>
-      <a class="ui-btn">Location</a>
-      <a class="ui-btn">Hungry Level</a>
-      <a class="ui-btn">Meal/Dessert</a>
-      <div data-role="footer" data-position="fixed" data-theme="b">
-        <div class="ui-grid-b" style="height:55px">
-          <div class="ui-block-a" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-home ui-shadow-icon ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-          <div class="ui-block-b" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-user ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-          <div class="ui-block-c" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-tag ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Page: page1  -->
-  <div id="page1" data-role="page">
-    <div data-role="header" data-position="fixed" data-theme="b">
-      <h3>tkUeat</h3> 
-    </div>
-    <div role="main" class="ui-content">
-      <div data-role="footer" data-position="fixed" data-theme="b">
-        <div class="ui-grid-b" style="height:55px">
-          <div class="ui-block-a" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-home ui-shadow-icon ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-          <div class="ui-block-b" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-user ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-          <div class="ui-block-c" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-tag ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-        </div>
-      </div>
-      <h1 is="gk-text">8 Hot Pot</h1> 
-      <div class="ui-field-contain">
-        <label for="gk-12i9zc">giving your rate:</label>
-        <input id="gk-12i9zc" value="10" min="0" max="10" type="range">
-      </div>
-      <div class="ui-field-contain">
-        <label for="gk-12M5wZ">giving your review:</label>
-        <textarea id="gk-12M5wZ" name></textarea>
-      </div>
-      <div class="ui-grid-a" style="height:95px">
-        <div class="ui-block-a" style="height:100%">
-          <a class="ui-btn">Submit</a>
-        </div>
-        <div class="ui-block-b" style="height:100%">
-          <a class="ui-btn">Cancel</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Page: page2  -->
-  <div id="page2" data-role="page">
-    <div data-role="header" data-position="fixed" data-theme="b">
-      <h3>tkUeat</h3> 
-    </div>
-    <div role="main" class="ui-content">
-      <div data-role="footer" data-position="fixed" data-theme="b">
-        <div class="ui-grid-b" style="height:55px">
-          <div class="ui-block-a" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-home ui-shadow-icon ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-          <div class="ui-block-b" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-user ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-          <div class="ui-block-c" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-tag ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-        </div>
-      </div>
-      <h1 is="gk-text">Depend on Location</h1> 
-      <div class="ui-field-contain">
-        <label for="gk-125cEr">Area Select:</label>
-        <select id="gk-125cEr">
-          <option value="ct">College Town</option>
-          <option value="systreet">Shuiyuan Street</option>
-          <option value="gcc">Golden Chicken Comunity</option>
-        </select>
-      </div>
-      <div class="ui-field-contain">
-        <label for="gk-126MNV">Restaurent:</label>
-        <select id="gk-126MNV">
-          <option value="rb">Rice Brother</option>
-          <option value="st">Shion TOFU</option>
-          <option value="sh">Sweet Holic</option>
-        </select>
-      </div>
-      <a class="ui-btn">Submit</a>
-    </div>
-  </div>
-  <!-- Page: page1  -->
-  <div id="page1" data-role="page">
-    <div data-role="header" data-position="fixed" data-theme="b">
-      <h3>tkUeat</h3> 
-    </div>
-    <div role="main" class="ui-content">
-      <div data-role="footer" data-position="fixed" data-theme="b">
-        <div class="ui-grid-b" style="height:55px">
-          <div class="ui-block-a" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-home ui-shadow-icon ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-          <div class="ui-block-b" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-user ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-          <div class="ui-block-c" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-tag ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-        </div>
-      </div>
-      <h1 is="gk-text">8 Hot Pot</h1> 
-      <div class="ui-field-contain">
-        <label for="gk-12i9zc">giving your rate:</label>
-        <input id="gk-12i9zc" value="10" min="0" max="10" type="range">
-      </div>
-      <div class="ui-field-contain">
-        <label for="gk-12M5wZ">giving your review:</label>
-        <textarea id="gk-12M5wZ" name></textarea>
-      </div>
-      <div class="ui-grid-a" style="height:95px">
-        <div class="ui-block-a" style="height:100%">
-          <a class="ui-btn">Submit</a>
-        </div>
-        <div class="ui-block-b" style="height:100%">
-          <a class="ui-btn">Cancel</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Page: page2  -->
-  <div id="page2" data-role="page">
-    <div data-role="header" data-position="fixed" data-theme="b">
-      <h3>tkUeat</h3> 
-    </div>
-    <div role="main" class="ui-content">
-      <div data-role="footer" data-position="fixed" data-theme="b">
-        <div class="ui-grid-b" style="height:55px">
-          <div class="ui-block-a" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-home ui-shadow-icon ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-          <div class="ui-block-b" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-user ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-          <div class="ui-block-c" style="height:100%">
-            <a href="index.html" class="ui-btn ui-icon-tag ui-btn-icon-notext" style="height:50px;width:100px"></a>
-          </div>
-        </div>
-      </div>
-      <h1 is="gk-text">Depend on Location</h1> 
-      <div class="ui-field-contain">
-        <label for="gk-125cEr">Area Select:</label>
-        <select id="gk-125cEr">
-          <option value="ct">College Town</option>
-          <option value="systreet">Shuiyuan Street</option>
-          <option value="gcc">Golden Chicken Comunity</option>
-        </select>
-      </div>
-      <div class="ui-field-contain">
-        <label for="gk-126MNV">Restaurent:</label>
-        <select id="gk-126MNV">
-          <option value="rb">Rice Brother</option>
-          <option value="st">Shion TOFU</option>
-          <option value="sh">Sweet Holic</option>
-        </select>
-      </div>
-      <a class="ui-btn">Submit</a>
-    </div>
-  </div>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <title>EZoApp</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy" content="default-src * &apos;unsafe-inline&apos; &apos;unsafe-eval&apos; data: blob: filesystem:">    
+        <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
+          <link rel="stylesheet" href="code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+                    <script src="cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+                      <!-- Uncomment the following to include cordova in your app project -->
+        <!-- <script src="//ezoui.com/platforms/android_or_ios/cordova.js"></script> -->
+                        </head>
+  <body>
+    <!-- Page: Index  -->
+<div id="Index" data-role="page"> 
+ <div data-role="header" data-position="fixed"> 
+  <h3>tkUeat</h3> 
+ </div> 
+ <div role="main" class="ui-content"> 
+  <a class="ui-btn">Random Choose</a> 
+  <a class="ui-btn">Location</a> 
+  <a class="ui-btn">Hungry Level</a> 
+  <a class="ui-btn">Meal/Dessert</a> 
+ </div> 
+ <div data-role="footer" data-position="fixed"> 
+  <div class="ui-grid-b" style="height:55px"> 
+   <div class="ui-block-a" style="height:100%"> 
+    <a href="index.html" class="ui-btn ui-icon-home ui-shadow-icon ui-btn-icon-notext" style="height:50px;width:100px"></a> 
+   </div> 
+   <div class="ui-block-b" style="height:100%"> 
+    <a href="index.html" class="ui-btn ui-icon-user ui-btn-icon-notext" style="height:50px;width:100px"></a> 
+   </div> 
+   <div class="ui-block-c" style="height:100%"> 
+    <a href="index.html" class="ui-btn ui-icon-tag ui-btn-icon-notext" style="height:50px;width:100px"></a> 
+   </div> 
+  </div> 
+ </div> 
+</div>
+  </body>
 </html>
 
