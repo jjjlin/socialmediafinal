@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <!--facebook-->
+</head>
+
+<body>
+    <!-- Facebook API-->
     <div id="fb-root"></div>
     <script>
     (function(d, s, id) {
@@ -17,27 +20,28 @@
         if (d.getElementById(id)) return;
         js = d.createElement(s);
         js.id = id;
-        js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.11&appId=138548530156448';
+        js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12&appId=138548530156448&autoLogAppEvents=1';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
-</head>
-
-<body>
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="brand-logo">YJ Lin</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Index</a></li>
+                <!-->
                 <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contactme.html">Contact Me</a></li>
+                <-->
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
             </ul>
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="index.html">Index</a></li>
+                <!-->
                 <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contactme.html">Contact Me</a></li>
+                <-->
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -45,15 +49,15 @@
     <div id="top" class="slider">
         <ul class="slides">
             <li>
-                <img src="img/index1.jpg">
+                <img src="img/index_1_fix.jpg">
                 <!-- random image -->
                 <div class="caption center-align">
-                    <h3 class="header center" style="text-shadow: black 0.1em 0.1em 0.2em">Hi there</h3>
-                    <h5 style="text-shadow: black 0.1em 0.1em 0.2em">;)</h5>
+                    <h3 class="header center" style="text-shadow: black 0.1em 0.1em 0.2em">Hi there!</h3>
+                    <h5 style="text-shadow: black 0.1em 0.1em 0.2em"></h5>
                 </div>
             </li>
             <li>
-                <img src="img/index3.jpg">
+                <img src="img/index2.jpg">
                 <!-- random image -->
                 <div class="caption left-align white-text">
                     <h3 style="text-shadow: black 0.1em 0.1em 0.2em">My name is...</h3>
@@ -62,31 +66,32 @@
                 </div>
             </li>
             <li>
-                <img src="img/index4.jpg">
+                <img src="img/index3.jpg">
                 <!-- random image -->
                 <div class="caption right-align">
-                    <h3 style="text-shadow: black 0.1em 0.1em 0.2em">This app can...</h3>
-                    <h5 style="text-shadow: black 0.1em 0.1em 0.2em" class="light grey-text text-lighten-3">Let you know who I am<br></h5>
+                    <h3 style="text-shadow: black 0.1em 0.1em 0.2em">Welcome to my website</h3>
+                    <h5 style="text-shadow: black 0.1em 0.1em 0.2em" class="light grey-text text-lighten-3">The context includes resume and personal information<br></h5>
                 </div>
             </li>
             <li>
-                <img src="img/index2.jpg">
+                <img src="img/index4.jpg">
                 <!-- random image -->
                 <div class="caption center-align">
-                    <h3 style="text-shadow: black 0.1em 0.1em 0.2em">Enjoy!</h3>
-                    <h5 style="text-shadow: black 0.1em 0.1em 0.2em"">;)</h5>
+                    <h3 style="text-shadow: black 0.1em 0.1em 0.2em">Thanks for your visting!</h3>
+                    <h5 style="text-shadow: black 0.1em 0.1em 0.2em" ">Enjoy ;)</h5>
                 </div>
             </li>
     </div>
-    <div class="container">
-        <div class="section">
-            <div class="row">
-                <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <div class="progress">
-                        <div class="indeterminate"></div>
+    <div class="container ">
+        <div class="section ">
+            <div class="row ">
+                <div class="col s12 center ">
+                    <h3><i class="mdi-content-send brown-text "></i></h3>
+                    <div class="progress ">
+                        <div class="indeterminate "></div>
                     </div>
-                    <div class="button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share this app on your facebook ;)</a></div>
+                    <div class="fb-share-button" data-href="https://yjwonderland.azurewebsites.net/jinjin/index.html" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyjwonderland.azurewebsites.net%2Fjinjin%2Findex.html&amp;src=sdkpreparse">Share</a></div>
+
                 </div>
             </div>
         </div>
@@ -95,28 +100,29 @@
         <div class="container">
             <div class="row">
                 <div class="col l4 s12">
-                    <h5 class="white-text">Power by</h5>
+                    <h5 class="white-text">Powered by</h5>
                     <img src="img/tku22.png" style="height: 50px">
                 </div>
                 <div class="col l8 s12">
-                    <h5 class="white-text">Social Medias</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Facebook</a></li>
-                        <li><a class="white-text" href="#!">Instagram</a></li>
-                    </ul>
+                    <h5 class="white-text">Related Link</h5>
+                    <div class="row">
+                        <a href="https://www.facebook.com/profile.php?id=100000185970502"><img src="img/fb.png" style="height: 30px">
+                        <a href="https://imggram.com/profile/xollxollxolloxlloxllox/4125625848"><img src="img/ig.png" style="height: 30px">
+                        <a href="https://github.com/ellenlin000"><img src="img/github.png" style="height: 30px">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
                 Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Yu-Jing Lin</a>
-            </div>
-        </div>
+                        </div>
+                    </div>
     </footer>
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
+    <script src="js/materialize.js "></script>
+    <script src="js/init.js "></script>
     <!--Initialization -->
     <script>
     $(document).ready(function() {
